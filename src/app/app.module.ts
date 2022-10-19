@@ -7,10 +7,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddlibraryComponent } from './addlibrary/addlibrary.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewlibraryComponent } from './viewlibrary/viewlibrary.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:AddlibraryComponent
+  },
+  {
+    path:"view",component:ViewlibraryComponent
   }
 
 ]
@@ -19,7 +23,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddlibraryComponent
+    AddlibraryComponent,
+    ViewlibraryComponent
   ],
   imports: [
     BrowserModule,
