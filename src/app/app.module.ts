@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ViewlibraryComponent } from './viewlibrary/viewlibrary.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
 
 const appRoutes:Routes=[
   {
@@ -16,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"view",component:ViewlibraryComponent
+  },
+  {
+    path:"search",component:SearchComponent
   }
 
 ]
@@ -25,7 +29,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     AddlibraryComponent,
-    ViewlibraryComponent
+    ViewlibraryComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
