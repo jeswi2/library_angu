@@ -23,6 +23,15 @@ this.data=response
       }
     )
   }
+
+  updatebook=()=>{
+    
+    this.myapi.editbook(this.data[0]).subscribe(
+      (response)=>{
+        alert("successfully updated")
+      }
+    )
+  }
   data:any=[]
     
 
